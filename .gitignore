@@ -1,5 +1,5 @@
-misc/segments4
-misc/customprofiles
+misc/segments4/*.rd5
+misc/customprofiles/*.brf
 target/
 *.BAK
 .classpath
