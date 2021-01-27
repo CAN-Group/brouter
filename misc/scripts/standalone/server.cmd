@@ -32,6 +32,6 @@ if not exist "%CUSTOMPROFILESPATH%" (
     set CUSTOMPROFILESPATH=..\..\customprofiles
 )
 
-java %JAVA_OPTS% -cp %CLASSPATH% btools.server.RouteServer "%SEGMENTSPATH%" "%PROFILESPATH%" "%CUSTOMPROFILESPATH%" 17777 1
+java %JAVA_OPTS% -cp %CLASSPATH% btools.server.RouteServer "%SEGMENTSPATH%" "%PROFILESPATH%" "%CUSTOMPROFILESPATH%" 17777 4
 
 popd
