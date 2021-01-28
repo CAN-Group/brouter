@@ -4,14 +4,14 @@ WORKDIR /build
 
 COPY pom.xml .
 COPY settings.xml .
-COPY brouter-codec .
-COPY brouter-core .
-COPY brouter-expressions .
-COPY brouter-map-creator .
-COPY brouter-mapaccess .
-COPY brouter-routing-app .
-COPY brouter-server .
-COPY brouter-util .
+COPY brouter-codec brouter-codec
+COPY brouter-core brouter-core
+COPY brouter-expressions brouter-expressions
+COPY brouter-map-creator brouter-map-creator
+COPY brouter-mapaccess brouter-mapaccess
+COPY brouter-routing-app brouter-routing-app
+COPY brouter-server brouter-server
+COPY brouter-util brouter-util
 
 RUN mvn clean install -pl '!brouter-routing-app' '-Dmaven.javadoc.skip=true' -DskipTests
 
@@ -34,4 +34,4 @@ COPY get_segments.sh get_segments.sh
 
 EXPOSE 17777
 
-CMD server.sh
+CMD ./server.sh
