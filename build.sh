@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPOSITORY="can/brouter"
-VERSION="1.3.1b"
+VERSION="1.3.2"
 
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 BRANCH="${BRANCH/\//-}"
