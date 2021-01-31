@@ -18,7 +18,7 @@ fi
 SEGMENTSPATH=$(realpath "$SEGMENTSPATH")
 
 # Segment files required for navigation inside Poland
-SEGMENTS="E10_N45.rd5 E10_N50.rd5 E15_N45.rd5 E15_N50.rd5 E20_N45.rd5 E20_N50.rd5"
+SEGMENTS="E10_N45.rd5 E15_N45.rd5 E15_N50.rd5 E20_N45.rd5 E20_N50.rd5"
 
 # Download each file, overwriting existing ones
 echo "Downloading files to $SEGMENTSPATH ..."
