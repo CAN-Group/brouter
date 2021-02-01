@@ -30,7 +30,7 @@ RUN mkdir $CUSTOMPROFILESPATH $PROFILESPATH $SEGMENTSPATH
 COPY --from=build /build/brouter-server/target/brouter*with-dependencies.jar $CLASSPATH
 COPY misc/profiles2 $PROFILESPATH
 COPY misc/scripts/standalone/server.sh server.sh
-COPY get_segments.sh get_segments.sh
+COPY misc/scripts/get_segments.sh get_segments.sh
 
 EXPOSE 17777
 
